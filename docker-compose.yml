@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  db:
+    build: ./db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/postgres-data:/var/lib/postgresql/data
